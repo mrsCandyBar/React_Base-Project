@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import {  actionCreators } from '../stores/aboutStore';
 
 interface IAboutProps {
   classes: any;
@@ -27,4 +30,7 @@ class About extends Component<IAboutProps, IAboutState> {
   }
 }
 
-export default About;
+export default connect(
+  state => state,
+  dispatch => bindActionCreators(actionCreators, dispatch)
+)(About);
