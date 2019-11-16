@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 interface IContactProps {
   classes: any;
+  history: any;
 }
 
 interface IContactState {
@@ -18,10 +19,12 @@ class Contact extends Component<IContactProps, IContactState> {
   }
 
   render() {
-    const { classes } = this.state;
+    const { history } = this.props;
     return (
       <main>
-        Contact Page
+        Contact Page<br/>
+
+        <a onClick={() => history.push('/about')}>Go to not found page</a>
       </main>
     )
   }
