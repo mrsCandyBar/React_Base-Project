@@ -18,7 +18,6 @@ class NotFound extends Component<INotFoundProps, INotFoundState> {
   }
 
   render() {
-    const { classes } = this.state;
     return (
       <main>
         Not Found Page
