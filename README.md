@@ -1,2 +1,2 @@
-# material-ui_landing-page
+# Base React Project
 creating a landing page using material-ui components
